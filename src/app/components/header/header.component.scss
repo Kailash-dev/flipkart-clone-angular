@@ -1,0 +1,91 @@
+/* Main header container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2874f0;
+    padding: 10px 20px;
+    color: white;
+  
+    /* Logo and Explore Plus */
+    .header-left {
+      .logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+  
+        img {
+          height: 30px;
+        }
+  
+        .explore-text {
+          font-size: 11px;
+          margin-left: 5px;
+  
+          .plus-text {
+            color: #ffe500;
+  
+            img {
+              height: 10px;
+              margin-left: 3px;
+            }
+          }
+        }
+      }
+    }
+  
+    /* Search Bar */
+    .search-bar {
+      display: flex;
+      flex: 1;
+      margin: 0 20px;
+  
+      input {
+        flex: 1;
+        padding: 8px;
+        border: none;
+        border-radius: 2px;
+      }
+  
+      .search-btn {
+        background-color: #ffe500;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+    }
+  
+    /* Right Section (Login, Cart, etc.) */
+    .header-right {
+      display: flex;
+      align-items: center;
+  
+      .login-btn,
+      .cart-btn,
+      .seller-btn,
+      .more-btn {
+        background: none;
+        border: none;
+        color: white;
+        margin-left: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+  
+      .cart-btn {
+        text-decoration: none;
+      }
+  
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+  
